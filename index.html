@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Managment Matrix</title>
+    <link href="style.css" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <header id="header">
+        <div class="quote"> "Every minute is a chance to change the world." - Unknown </div>
+    </header>
+    <div class="matrix">
+        <div class="quadrant urgent-important" id="urgent-important" onclick="add(this.id)">
+            <div class="matrix-header">Urgent & Important </div>
+            <div class="tasks">
+                
+            </div>
+        </div>
+        <div class="quadrant not-urgent-important" id="not-urgent-important" onclick="add(this.id)">
+            <div class="matrix-header">Not Urgent & Important </div>
+            <div class="tasks">
+                
+            </div>
+        </div>
+        <div class="quadrant urgent-not-important" id="urgent-not-important" onclick="add(this.id)">
+            <div class="matrix-header">Urgent & Not Important </div>
+            <div class="tasks">
+                
+            </div>
+        </div>
+        <div class="quadrant not-urgent-not-important" id="not-urgent-not-important" onclick="add(this.id)">
+            <div class="matrix-header">Not Urgent & Not Important </div>
+            <div class="tasks">
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,110 @@
+:root {
+    --body-background-color: black;
+    --white: white;
+}
+
+body {
+    background-color: var(--body-background-color);
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    color: var(--body-background-color);
+    background-color: rgb(185, 236, 176);
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+
+.quote {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+}
+
+.quadrant {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    margin: 0px;
+    font-size: 1.5vw;
+    color: white;
+}
+
+.urgent-important {
+    background-color: #ff6b6b;
+    /* Red */
+}
+
+.not-urgent-important {
+    background-color: #6bff9d;
+    /* Green */
+}
+
+.urgent-not-important {
+    background-color: #ffb86b;
+    /* Orange */
+}
+
+.not-urgent-not-important {
+    background-color: #6bd3ff;
+    /* Blue */
+}
+
+
+.matrix-header {
+    width: 100%;
+    height: 5vh;
+    background-color: var(--body-background-color);
+    color: var(--white);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.tasks {
+    position: absolute;
+    background-color: inherit;
+    width: 100%;
+    top: 15%;
+    overflow-y: auto;
+    max-height: calc(50vh - 10vh); 
+}
+
+.task {
+    margin: 0px 5px;
+    color: black;
+    border-bottom: 2px solid black;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0px 35px 0px 15px;
+    text-align: justify;
+    border-radius: 5px;
+
+}
+
+.delete-button{
+    position: absolute;
+    right: 7px;
+    border: none;
+    background-color: inherit;
+    color: black;
+    font-weight: bolder;
+}
