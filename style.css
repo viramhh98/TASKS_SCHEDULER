@@ -75,7 +75,13 @@ body {
     text-align: center;
     padding: 0;
     margin: 0;
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.matrix-header img{
+    width: auto;
+    height: inherit;
 }
 
 .tasks {
